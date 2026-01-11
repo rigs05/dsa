@@ -6,7 +6,7 @@
 """
 
 class Palindrome:
-	def logic(x: int) -> int:
+	def logic(x: int) -> bool:
 		num = x  # store the original value
 		rev = 0
 		if x < 0:
