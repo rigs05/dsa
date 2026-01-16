@@ -22,7 +22,7 @@ class GCD:
 					return a
 	
 if __name__ == "__main__":
-    n = int(input().strip())
-    nums = list(map(int, input().split()))
+    # n = int(input().strip())
+    nums = list(map(int, input("Enter the elements separated by space: ").split()))
     print(GCD().findGCD(nums))
 
