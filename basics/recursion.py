@@ -3,13 +3,14 @@
 - BASE Condition/Specified Condition: decides when will the function execution complete
 - Recursion Tree: Graphical Representation of recursion defined in the form of F(X)
 - Stack Overflow/Stack Space: place where incompleted functions are stored
+- Count variables should be passed on using parameters only
 """
 class Recursion:
 	# 1. Print Name 5x
 	def printName(self, name, cnt=1):
 		if cnt > 5:
 			return
-		print(name)
+		print(f"{cnt}.{name}")
 		self.printName(name, cnt + 1)
 	
 	# 2. Print 1 → N
