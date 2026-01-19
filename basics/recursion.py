@@ -3,6 +3,7 @@
 - BASE Condition/Specified Condition: decides when will the function execution complete
 - Recursion Tree: Graphical Representation of recursion defined in the form of F(X)
 - Stack Overflow/Stack Space: place where incompleted functions are stored
+- Stack Space is the machine's internal memory consumption by a program using it's Stack
 - Count variables should be passed on using parameters only
 """
 class Recursion:
@@ -27,13 +28,26 @@ class Recursion:
 		print(n)
 		self.print_rev(n - 1)
 
+	# 4. Print 1 → N using Backtracking
+	def print_backtrack(self, n):
+		if n < 1:
+			return
+		self.print_backtrack(n-1)
+		print(n)		# Note the print comes AFTER the recursion is called and not before
+	
+	# 5. Print N → 1 using Backtracking
+	def print_backtrack_back(self, n, i=1):
+		if i > n:
+			return
+		self.print_backtrack_back(n, i+1)
+		print(i)
 
 if __name__ == "__main__":
 	print("1. Print Certain Name 5 times")
 	print("2. Print Linearly from 1 to N")
 	print("3. Print from N to 1")
-	# print("4. Print Linearly from 1 to N (using Backtracking)")
-	# print("5. Print Linearly from N to 1 (using Backtracking)")
+	print("4. Print Linearly from 1 to N (using Backtracking)")
+	print("5. Print Linearly from N to 1 (using Backtracking)")
 
 	trigger = int(input("Choose what to perform: "))
 	match trigger:
@@ -46,3 +60,11 @@ if __name__ == "__main__":
 		case 3:
 			n = int(input("Enter N to print N → 1: "))
 			Recursion().print_rev(n)
+		case 4:
+			# Backtracking refers to Starting from N → Base Condition returns the function call 
+			# → Actual Logic is executed (i.e. print from 1 → N)
+			n = int(input("Enter N to print 1 → N using Backtracking: "))
+			Recursion().print_backtrack(n)
+		case 5:
+			n = int(input("Enter N to print N → 1 using Backtracking: "))
+			Recursion().print_backtrack_back(n)
