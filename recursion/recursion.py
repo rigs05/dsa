@@ -2,9 +2,11 @@
 - Recursion is calling of a function again and again
 - BASE Condition/Specified Condition: decides when will the function execution complete
 - Recursion Tree: Graphical Representation of recursion defined in the form of F(X)
-- Stack Overflow/Stack Space: place where incompleted functions are stored
+- Stack Overflow/Stack Space/Auxiliary Space: place where incompleted functions are stored
 - Stack Space is the machine's internal memory consumption by a program using it's Stack
 - Count variables should be passed on using parameters only
+
+- Note: IDENTIFY the task that recursion needs to do in order to find the recursion logic & base condition
 """
 class Recursion:
 	# 1. Print Name 5x
