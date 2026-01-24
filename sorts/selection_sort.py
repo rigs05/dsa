@@ -3,6 +3,7 @@ Selection Sort
 - 2 Nested Loops
 - SELECT the minimum element from INNER loop → Swap with element at idx. of OUTER loop
 - ONE swap per outer iteration
+- test (24-01-2026 - on the roof)
 """
 
 def selection_sort(arr):
