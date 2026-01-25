@@ -4,6 +4,7 @@ Selection Sort
 - SELECT the minimum element from INNER loop → Swap with element at idx. of OUTER loop
 - ONE swap per outer iteration
 - test (24-01-2026 - on the roof)
+- test (25-01-2026 - on the chair)
 """
 
 def selection_sort(arr):
