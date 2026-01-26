@@ -3,6 +3,8 @@ Insertion Sort:
 - Takes an element and places it in correct order
 - Increase the window-size and perform adjacent comparisons inside that window until correct order is reached
 - Iteration goes Right → Left
+- Time Complexity: O(N^2) {Worst, Average Case} ; O(N) {Best Case -- no swaps happen, while loop never runs}
+- Operations are in the form of Sum of Natural Numbers i.e. (N * (N+1)) / 2 → N^2
 """
 
 def insertion_sort(arr):
