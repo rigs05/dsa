@@ -5,6 +5,7 @@ Selection Sort
 - ONE swap per outer iteration
 - test (24-01-2026 - on the roof)
 - test (25-01-2026 - on the chair)
+- Time Complexity : O(N^2) {Best, Average, Worst Case}
 """
 
 def selection_sort(arr):
