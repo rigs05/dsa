@@ -7,6 +7,7 @@
 	- Nested loop to select all the possible combination of words from the given array
 	- Ensure i != j and words[i] < words[j]
  	- Increase Count as the bool function returns True
+	- test (30-01-2026)
 """
 
 from typing import List
