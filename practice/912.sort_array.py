@@ -33,3 +33,6 @@ class Solution:
             merged.extend(right[j:])
 
         return merged
+
+a = list(map(int, input("Enter the unsorted array: ").split()))
+print(f"Sorted Array: {Solution().sortArray(a)}")
