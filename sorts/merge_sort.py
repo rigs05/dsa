@@ -39,6 +39,31 @@ class MergeSort:
 		for i in range(low, high+1):
 			arr[i] = temp[i-low]
 
+	def slice_based_merge(self, nums):
+		if len(nums) <= 1:
+				return nums
+		mid = len(nums) // 2
+		left = self.slice_based_merge(nums[:mid])
+		right = self.slice_based_merge(nums[mid:])
+		
+		return self.slice_merge(left, right)
+
+	def slice_merge(self, left, right):
+			i = j = 0
+			merged = []
+			
+			while i < len(left) and j < len(right):
+					if left[i] <= right[j]:
+							merged.append(left[i])
+							i += 1
+					else:
+							merged.append(right[j])
+							j += 1
+			
+			merged.extend(left[i:])
+			merged.extend(right[j:])
+			return merged
+
 if __name__ == "__main__":
 	a = list(map(int, input("Enter the unsorted array: ").split()))
 	MergeSort().sort(a, 0, len(a)-1)
