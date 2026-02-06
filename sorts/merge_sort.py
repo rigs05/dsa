@@ -4,6 +4,9 @@ Merge Sort:
 - Array with single elements are already temp
 - Use recursion to divide the array until each individual array has exactly 1 element left
 - We manipulate the index rather than the value itself
+- Two Types:
+	- Index-based sorting
+	- Slice-based sorting
 """
 
 class MergeSort:
