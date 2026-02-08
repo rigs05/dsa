@@ -8,6 +8,7 @@ Merge Sort:
 	- Index-based sorting
 	- Slice-based sorting
 	- test (07-02-2026)
+	- test2 (08-02-2026)
 """
 
 class MergeSort:
